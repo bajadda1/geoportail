@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="navigation">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.26/"></script>
+
+
+</head>
+<body>
+<div layout:fragment="content"
+     style="height: 100vh;width: 100%;">
+    <div  class="w-100 h-100">
+        <div class="w-100 h-50 position-absolute bg-white"
+        style="top: 35%!important">
+            <div class="w-100 h-100  d-flex flex-row justify-content-center align-items-center">
+                <div class="">
+                    <a class="btn btn-outline-warning fw-bold"
+                    th:href="@{/map}">
+                        dicover
+                    </a>
+                    <a class="btn btn-info">
+                        bajadda
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <img
+                class="w-100 h-100"
+                src="https://images.prismic.io/ellipsis-drive/93c027de-ccb1-414b-b868-6675339fa338_The+future+of+GIS+%281%29.png?auto=compress%2Cformat&fit=max">
+    </div>
+</div>
+</body>
+</html>

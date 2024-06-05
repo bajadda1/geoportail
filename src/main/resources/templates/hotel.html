@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="navigation">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hospital</title>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.26/"></script>
+
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="/javascript/hotel.js"></script>
+
+    <style>
+
+        #filters input {
+            display: block;
+            margin-bottom: 10px;
+            padding: 5px;
+            width: calc(100% - 12px);
+        }
+    </style>
+
+</head>
+<body>
+
+<div layout:fragment="content">
+    <div class="container">
+
+        <div class="row justify-content-end">
+            <div class="col-6">
+                <div id="filters">
+
+                    <input class="form-text"
+                            type="text"
+                           id="hotelCategory"
+                           placeholder=" Enter Hotel Category (1*, 2*, 3*..)" />
+
+                    <button id="applyFilters"
+                    class="btn btn-outline-info">Apply Filters</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="viewDiv" class="border shadow-lg"
+             style="height: 100vh;width: 100%;">
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="navigation">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reclamation</title>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.26/"></script>
+
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="/javascript/reclamations.js"></script>
+
+
+
+</head>
+<body>
+
+<div layout:fragment="content">
+    <div class="container">
+
+        <div id="viewDiv" class="border shadow-lg"
+             style="height: 100vh;width: 100%;">
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
